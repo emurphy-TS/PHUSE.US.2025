@@ -19,7 +19,7 @@ jobs:
       - name: Install Dependencies
         run: |
           install.packages("testthat")
-          install.packages("tidyverse")
+          install.packages("tidyverse" , dependencies=TRUE) 
         shell: Rscript {0}
 
       - name: Run Tests
