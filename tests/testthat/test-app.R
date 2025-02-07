@@ -1,9 +1,3 @@
-test_that("multiplication works", {
-  expect_equal(2 * 2, 4)
-})
-library(testthat)
-library(shinytest2)
-
 test_that("Addition works for positive numbers", {
   app <- AppDriver$new(variant = platform_variant(), name = "addition_test")
   app$set_inputs(num1 = 3, num2 = 5)
@@ -86,3 +80,7 @@ test_that("Addition handles non-numeric input correctly", {
 
 
 
+path <- file.path(proj_get(), "test.package")
+create_package(path)
+
+proj_get()
