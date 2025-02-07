@@ -77,10 +77,3 @@ test_that("Addition handles non-numeric input correctly", {
   expect_equal(app$get_value(output = "sum"), "NA")
   app$stop()
 })
-
-
-
-path <- file.path(proj_get(), "test.package")
-create_package(path)
-
-proj_get()
