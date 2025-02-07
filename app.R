@@ -22,7 +22,7 @@ server <- function(input, output) {
     input$add_btn  # React when button is clicked
     isolate(input$num1 + input$num2)
   })
-  
+
   output$sum <- renderText({
     sum_result()
   })
@@ -30,4 +30,3 @@ server <- function(input, output) {
 
 # Run the application
 shinyApp(ui = ui, server = server)
-
